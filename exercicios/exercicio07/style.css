@@ -1,0 +1,56 @@
+@charset "UTF-8";
+/*
+Medidas absolutas: cm, mm, in, px, pt, pc
+
+Medidas relativas: em, ex, rem, vw, vh, %
+
+1em = 16px(formatação padrão)
+
+rem - Tamanho/configuração do body
+*/
+
+/*
+font-weight - lighter, normal, bold, bolder.
+font-style - para colocar em italico(italic).
+text-decoration - Colocar decorações no texto.
+"shorthand - mãozinha"
+font: <font-style> <font-weight> <font-size> <font-family>;
+
+*/
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-image: linear-gradient(to right, #120373, #482EF2);
+}
+
+main {
+    background-color: #ffffff;
+    box-shadow: 5px 5px 15px #220540;
+    width: 600px;
+    padding: 10px;
+    margin: auto;
+    border-radius: 10px;
+    
+}
+
+h1 {
+    color: #D914A4;
+    text-align: center;
+    text-shadow: 1px 1px 2px #220540d8;
+}
+
+h2 {
+    color: #0F0AA6;
+}
+
+h3 {
+    color: #0e0992;
+}
+
+p {
+    text-align: justify;
+    color: #220540;
+
+}
