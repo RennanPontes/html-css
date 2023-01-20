@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Estudos de iframe</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        iframe#teste {
+            height: 600px;
+            width: 600px;
+            display: block;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando o uso de um iframe</h1>
+    <p>
+        Acessando o site do 
+        <!--         Tamanho padrão de 300x150-->
+        <iframe src="https://www.cursoemvideo.com" frameborder="1" scolling="no">
+            <a href="https://www.cursoemvideo.com" target="_blank">CursoemVideo</a>
+        </iframe>
+        para aprender a programar.
+    </p>
+    <h1>Podemos também adicionar nossos proprios sites no iframe</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem explicabo facilis alias cupiditate ex non voluptatem odio facere dolorum consectetur sequi itaque, minus illo tenetur consequatur saepe quas et commodi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, quidem. Libero provident pariatur consequatur ipsam tempora sit sed odio possimus quaerat ex, vitae nihil atque consectetur animi praesentium, exercitationem illo?</p>
+    <iframe src="paginas/pag001.html" frameborder="0"
+    id="teste"><p>[ERROR] Página não encontrada</p></iframe>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi maiores voluptas, beatae veniam repellendus assumenda tenetur repellat quae consectetur minus aperiam, quo necessitatibus mollitia itaque consequatur deserunt aut. Dolorem, qui. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium doloribus dolores suscipit, accusamus culpa est pariatur hic fugiat sequi autem architecto totam sunt. Vitae repellendus earum adipisci magni laboriosam ea?</p>
+</body>
+</html>
