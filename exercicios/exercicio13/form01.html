@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudando formulários</title>
+</head>
+<body style="border: 1px solid black; padding: 10px;">
+    <h1>Estudando formulários</h1>
+    <form action="cadastro.php" method="post">
+        <p>
+            <label for="inome">Usuario: </label>
+             <input type="text" name="nome" id="inome" required size="16" maxlength="30" autocomplete="username">
+        </p>
+        <p>
+            <label for="idata">Idade: </label>
+            <input type="number" name="dada" id="idata" required size="3" maxlength="4" placeholder="Dado para confirmação">
+        </p>
+        <p>
+            <label for="isenha">Senha:  </label> 
+            <input type="password" name="senha" id="isenha" required
+            size="10" minlength="8" maxlength="16" autocomplete="current-password">
+        </p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Apagar">
+    </form>
+</body>
+</html>
