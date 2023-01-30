@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de formulário</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <fieldset>
+        <legend>Exemplo de alguns elementos de um formulário</legend>
+        <form action="cadastro.php" method="post">
+            <div>
+                <label for="iestado">Estado:</label>
+                <select name="estado" id="iestado">
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="TO">Tocatins</option>
+                    <option value="" selected>---</option>
+                </select>
+            </div>
+            <div>
+                <label for="iprof">Profissão:</label>
+                <input type="text" name="prof" id="iprof" list="lstprof">
+                <datalist id="lstprof">
+                    <option value="ADM">Administrador</option>
+                    <option value="CONT">Contabilista</option>
+                    <optgroup label="Ensino">
+                        <option>Desenvolvedor</option>
+                        <option>Professor</option>
+                    </optgroup>
+                </datalist>
+            </div>
+            <div>
+                <label for="imsg">Mensagem:</label> <br>
+                <textarea name="msg" id="imsg" cols="15" rows="5" ></textarea>
+            </div>
+            <div>
+                <fieldset>
+                    <label for="in1">Número 1:</label>
+                    <input type="number" name="n1" id="in1" min="0" max="50" required oninput="soma.innerHTML = Number(in1.value) + Number(in2.value)"> <br>
+                    <label for="in2">Número 2:</label>
+                    <input type="number" name="n2" id="in2" min="0" max="50" required oninput="soma.innerHTML = Number(in1.value) + Number(in2.value)"> <br>
+                    <label for="is">Soma:</label>
+                    <output id="soma">0</output>
+                </fieldset>
+            </div>
+            <div>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Apagar">
+            </div>
+        </form>
+    </fieldset>
+</body>
+</html>
