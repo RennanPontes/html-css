@@ -16,3 +16,7 @@ html {
 menu {
     display: none;
 }
+
+main {
+    width: 100vw;
+}
